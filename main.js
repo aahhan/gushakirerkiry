@@ -1,36 +1,34 @@
 
+let seconds = 10;
+let correctAnswer = 0;
+let incorrectAnswer = 0
 
-const countries = [
-    {
-        "flag": "",
-        "name": "Մեծ Բրիտանիա"
-    },
-
-    {    
-        "flag": "",
-        "name": "Շվեյցարիա"
-    }
-
-
-]
 
 var coun = countries [Math.floor(Math.random(countries.length-1))]
 getElement("flag").src = coun.flag
 
-
-let seconds = 10;
-let correctAnswer = 0;
-let incorrectAnswer = 0
 
 
 function getElement(id) {
     return document.getElementById(id)
 }
 
+
+function getRandomCountry(){
+    return countries [Math.floor(Math.random(countries.length-1)*10)]
+ }
+
+
+function main(){
+     coun = getRandomCountry()
+    getElement("flag").src = coun.flag
+}
+
 function timer() {
     setTimeout(finish, seconds * 1000)
     getElement("time").innerHTML = seconds
     let countdown = setInterval(function () {
+        main()
         seconds--
         getElement("time").textContent = seconds
         if (seconds <= 0) clearInterval(countdown)
@@ -46,6 +44,7 @@ function check() {
     } catch {
         return;
     }
+
     correctAnswer++;
     getElement("score").innerHTML = correctAnswer;
     clearInterval(checkInterval);
