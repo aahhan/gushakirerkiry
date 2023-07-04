@@ -4,11 +4,6 @@ let correctAnswer = 0;
 let incorrectAnswer = 0
 
 
-var coun = countries [Math.floor(Math.random(countries.length-1))]
-getElement("flag").src = coun.flag
-
-
-
 function getElement(id) {
     return document.getElementById(id)
 }
@@ -21,7 +16,7 @@ function getRandomCountry(){
 
 function main(){
      coun = getRandomCountry()
-    getElement("flag").src = coun.flag
+    getElement("flag").src = coun.image
 }
 
 function timer() {
@@ -39,7 +34,7 @@ function timer() {
 function check() {
     let input
     try {
-        input = document.querySelector('input(name = "option"):checked').querySelector.value;
+        input = document.querySelector('input(name = "option"):checked').value;
 
     } catch {
         return;

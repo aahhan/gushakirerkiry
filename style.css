@@ -45,11 +45,12 @@ html {
 
 .flag {
     width: 100%;
-    position:absolute;
+    position: absolute;
     margin-top: 8%;
+    margin-left: -52%;
     border: 1px solid rgb(0, 0, 0);
-    margin-bottom: 50%;
-    top:50px
+    margin-bottom: 114%;
+    top: 50px;
 }
 
 #optionhalf {

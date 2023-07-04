@@ -1,132 +1,104 @@
 const countries = [
     {
-        "image": "",
+        "image": "images/uk.jpg",
         "name": "Մեծ Բրիտանիա"
     },
 
-    {    
-        "image": "",
-        "name": "Շվեյցարիա"
-    },
-
     {
-        "image": "",
+        "image": "images/usa.jpg",
         "name": "ԱՄՆ"
     },
 
     {    
-        "image": "",
+        "image": "images/france.png",
         "name": "Ֆրանսիա"
     },
 
     {
-        "image": "",
+        "image": "images/egipyt.jpg",
         "name": "Եգիպտոս"
     },
 
     {    
-        "image": "",
+        "image": "images/germany.png",
         "name": "Գերմանիա"
 
     },
     {    
-        "image": "INT_ARMENIA.jpg",
+        "image": "images/armenia.jpg",
         "name": "Հայաստան"
 
     },
     {    
-        "image": "",
+        "image": "images/portugal.jpg",
         "name": "Պորտուգալիա"
 
     },
     {    
-        "image": "",
+        "image": "images/spain.jpg",
         "name": "Իսպանիա"
 
     },
     {    
-        "image": "",
+        "image": "images/italy.png",
         "name": "Իտալիա"
 
     },
     {    
-        "image": "",
+        "image": "images/georgia.jpg",
         "name": "Վրաստան"
 
     },
     {    
-        "image": "",
+        "image": "images/canada.jpg",
         "name": "Կանադա"
 
     },
     {    
-        "image": "",
+        "image": "images/mexico.jpg",
         "name": "Մեքսիկա"
 
     },
     {    
-        "image": "",
+        "image": "images/Brasil.jpg",
         "name": "Բրազիլիա"
 
     },
     {    
-        "image": "",
-        "name": "Արգենտինա"
-
-    },
-    {    
-        "image": "",
+        "image": "images/chile.jpg",
         "name": "Չիլի"
 
     },
-    {    
-        "image": "",
-        "name": "Պերու"
 
-    },
     {    
-        "image": "",
+        "image": "images/iceland.jpg",
         "name": "Իսլանդիա"
 
     },
-    {    
-        "image": "",
-        "name": "Իռլանդիա"
 
-    },
     {    
-        "image": "",
-        "name": "Շվեդիա"
-
-    },
-    {    
-        "image": "",
+        "image": "images/norway.jpg",
         "name": "Նորվեգիա"
 
     },
     {    
-        "image": "",
+        "image": "images/finland.jpg",
         "name": "Ֆինլանդիա"
 
     },
     {    
-        "image": "",
+        "image": "images/denmark.jpg",
         "name": "Դանիա"
 
     },
     {    
-        "image": "",
+        "image": "images/poland.jpg",
         "name": "Լեհաստան"
 
     },
     {    
-        "image": "",
+        "image": "images/cypros.jpg",
         "name": "Կիպրոս"
 
     }
-
-
-    
-  
-
 ]
