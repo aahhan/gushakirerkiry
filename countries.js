@@ -100,5 +100,32 @@ const countries = [
         "image": "images/cypros.jpg",
         "name": "Կիպրոս"
 
-    }
+    },
+    {    
+        "image": "images/china.jpg",
+        "name": "Չինաստան"
+
+    },
+    {    
+        "image": "images/japan.jpg",
+        "name": "Ճապոնիա"
+
+    },
+    {    
+        "image": "images/india.jpg",
+        "name": "Հնդկաստան"
+
+    },
+    {    
+        "image": "images/south africa.jpg",
+        "name": "ՀԱՀ"
+
+    },
+    {    
+        "image": "images/south korea.png",
+        "name": "Հվ Կորեա"
+
+    },
+
+
 ]
