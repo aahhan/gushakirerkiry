@@ -1,4 +1,5 @@
 
+let correct;
 let seconds = 10;
 let correctAnswer = 0;
 let incorrectAnswer = 0
@@ -10,7 +11,7 @@ function getElement(id) {
 
 
 function getRandomCountry() {
-    return countries[Math.floor(Math.random(countries.length - 1) * 10)]
+    return countries[Math.round(Math.random() * (countries.length - 1))]
 }
 
 
@@ -18,9 +19,9 @@ function main() {
     let options = [];
     const maxOptions = 4;
     while (options.length < maxOptions) {
-        let coun = getRandomCountry()
+        let coun = getRandomCountry();
         if (options.indexOf(coun) === -1) {
-            options.push(coun)
+            options.push(coun);
         }
     }
     for (let i = 0; i < options.length; i++) {
@@ -44,10 +45,11 @@ function timer() {
     }, 1000)
 
 }
+
 function check() {
     let input
     try {
-        input = document.querySelector('input(name = "option"):checked').value;
+        input = document.querySelector('input[name = "option"]:checked').value;
 
     } catch {
         return;
@@ -56,21 +58,41 @@ function check() {
         correctAnswer++;
         getElement("score").innerHTML = correctAnswer;
 
-    } else { 
-        incorrectAnswer++ 
+    } else {
+        incorrectAnswer++
     }
 
     main()
 
 }
+
 function finish() {
+
     clearInterval(checkInterval);
-    let percentage =100;
+    let percentage = Math.round(correctAnswer / (correctAnswer + incorrectAnswer) * 100);
+    let resultForAnswers;
+
+    if (isNaN(percentage)) {
+        resultForAnswers = "Դու ճիշտ պատասխան չունես"
+    } else {
+        if (percentage >= 75 && percentage < 95) {
+            resultForAnswers = "Դու ցուցաբերել ես լավ արդյունք"
+        }
+        else if (percentage >= 95) {
+            resultForAnswers = "Դու ցուցաբերել ես գերազանց արդյունք"
+
+        }
+        else if (percentage < 75) {
+            resultForAnswers = "Վատ չէ,նորից փորձիր"
+        }
+
+
+    }
+
     getElement("alertaccuracy").innerHTML = ` ${percentage}%`
-   
+    
 }
 
-timer();
-main()
 let checkInterval = setInterval(check, 50);
-
+timer();
+main();

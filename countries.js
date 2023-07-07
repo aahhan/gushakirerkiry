@@ -126,6 +126,30 @@ const countries = [
         "name": "Հվ Կորեա"
 
     },
+    {    
+        "image": "images/north korea.jpg",
+        "name": "Հս Կորեա"
 
+    },
+    {    
+        "image": "images/Peru.jpg",
+        "name": "Պերու"
+
+    },
+    {    
+        "image": "images/cuba.jpg",
+        "name": "Կուբա"
+
+    },
+    {    
+        "image": "images/columbia.jpg",
+        "name": "Կոլումբիա"
+
+    },
+    {    
+        "image": "images/paraguay.jpg",
+        "name": "Պարագվայ"
+
+    },
 
 ]
