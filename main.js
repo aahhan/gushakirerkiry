@@ -69,8 +69,12 @@ function check() {
 function finish() {
 
     clearInterval(checkInterval);
-    let percentage = Math.round(correctAnswer / (correctAnswer + incorrectAnswer) * 100);
-    let resultForAnswers;
+    getElement("alert").style.display = "block";
+    getElement("card").style.display = "none";
+    getElement("alertscore").innerHTML = correctAnswer
+
+    let percentage = Math.round((correctAnswer / (correctAnswer + incorrectAnswer)) * 100);
+
 
     if (isNaN(percentage)) {
         resultForAnswers = "Դու ճիշտ պատասխան չունես"
@@ -79,7 +83,7 @@ function finish() {
             resultForAnswers = "Դու ցուցաբերել ես լավ արդյունք"
         }
         else if (percentage >= 95) {
-            resultForAnswers = "Դու ցուցաբերել ես գերազանց արդյունք"
+            resultForAnswers = "Դու ցուցաբերել ես գերազանց արդյունք "
 
         }
         else if (percentage < 75) {
@@ -89,8 +93,12 @@ function finish() {
 
     }
 
-    getElement("alertaccuracy").innerHTML = ` ${percentage}%`
-    
+    getElement("alertaccuracy").innerHTML = `${percentage} % ${resultForAnswers}  `
+
+}
+
+function refresh() {
+    location = location;
 }
 
 let checkInterval = setInterval(check, 50);

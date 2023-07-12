@@ -39,15 +39,16 @@ html {
     background-color: rgb(0, 0, 0);
     content: "";
     min-height: 10px;
-    height: 71.5%;
+    height: 86.4%;
     z-index: 1;
 }
 
 .flag {
+    
     width: 100%;
     position: absolute;
     margin-top: 8%;
-    margin-left: -52%;
+    margin-left: 9%;
     border: 1px solid rgb(0, 0, 0);
     margin-bottom: 114%;
     top: 50px;
@@ -118,7 +119,7 @@ html {
     border: 1px solid rgb(0, 0, 0);
     width: 100px;
     height: 100px;
-    box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, .3);
+    box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
@@ -141,7 +142,7 @@ html {
     margin-right: 154px;
     margin-top: 65px;
     height: 200px;
-    border: 1px dashed #38c3f5;
+    border: 1px dashed #38c3f500;
 }
 
 img{

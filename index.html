@@ -11,16 +11,14 @@
 
 <body>
     <section class="card" id="card">
-        <section class="infobar">
-            <div class="score">Ճշգրտություն: <span id="alertaccuracy"></span></div>
-        </section>
+
         <section class="infobar">
             <div class="score">Միավոր: <span id="score">0</span></div>
             <div class="time" id="time"></div>
         </section>
         <div class="container">
             <section class="section box">
-                <img src="" alt="flag"  id="flag">
+                <img src="" alt="flag" class="flag" id="flag">
             </section>
             <div class="border"></div>
             <section class="section" id="optionhalf">
@@ -46,7 +44,16 @@
             </section>
         </div>
     </section>
-    <script src = "countries.js"></script>
+
+    <section id="alert" class="card">
+        <div class="alerttext">Միավոր: <span id="alertscore"></span></div>
+        <div class="alerttext">Ճշգրտություն: <span id="alertaccuracy"></span></div>
+        <br>
+        <button onclick="refresh()" class="button">Վերսկսել</button>
+    </section>
+
+
+    <script src="countries.js"></script>
     <script src='main.js'></script>
 
 </body>

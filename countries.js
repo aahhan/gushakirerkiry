@@ -151,5 +151,46 @@ const countries = [
         "name": "Պարագվայ"
 
     },
+    {    
+        "image": "images/Latvia.jpg",
+        "name": "Լատվիա"
 
+    },
+    {    
+        "image": "images/lithuania.jpg",
+        "name": "Լիտվա"
+
+    },
+    {    
+        "image": "images/estonia.jpg",
+        "name": "Էստոնիա"
+
+    },
+    {
+        "image": "images/bulgaria.jpg",
+        "name": "Բուլղարիա"
+    },
+    {
+        "image": "images/",
+        "name": ""
+    },
+    {
+        "image": "images/",
+        "name": ""
+    },
+    {
+        "image": "images/",
+        "name": ""
+    },
+    {
+        "image": "images/",
+        "name": ""
+    },
+
+
+
+   
 ]
+    
+
+    
